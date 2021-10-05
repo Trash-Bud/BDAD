@@ -1,0 +1,18 @@
+PRAGMA foreign_keys = ON;
+
+SELECT idCurso, vagas FROM CURSO WHERE idCurso = 1;
+
+INSERT INTO "INSCRITO_EM_CURSO" VALUES(2,1);
+SELECT idCurso, vagas FROM CURSO WHERE idCurso = 1;
+INSERT INTO "INSCRITO_EM_CURSO" VALUES(3,1);
+
+
+SELECT idCurso, vagas FROM CURSO WHERE idCurso = 1;
+
+DELETE FROM INSCRITO_EM_CURSO WHERE idEstudante = 2 AND idCurso = 1;
+
+SELECT idCurso, vagas FROM CURSO WHERE idCurso = 1;
+
+DELETE FROM INSCRITO_EM_CURSO WHERE idEstudante = 3 AND idCurso = 1; 
+
+SELECT idCurso, vagas FROM CURSO WHERE idCurso = 1;
